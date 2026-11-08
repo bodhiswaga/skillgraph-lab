@@ -1,0 +1,92 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SkillGraph — интерактивный учебный макет</title><style>body{margin:0;background:#0b1220;color:#e3edf7;font:18px system-ui}main{max-width:1000px;margin:auto;padding:20px}nav{display:flex;gap:12px;flex-wrap:wrap}button{background:#4fd1c5;color:#0b1220;border:0;border-radius:8px;padding:14px 24px;font:inherit;cursor:pointer}button:hover{background:#81e6d9}button:disabled{background:#526174;cursor:default}a{color:#4fd1c5}svg{display:block;max-height:65vh}section>button{margin:0 0 20px}p{line-height:1.5}[hidden]{display:none!important}</style><main><h1>SkillGraph</h1><p>Интерактивный учебный макет. Данные демонстрационные, запросы к backend не выполняются.</p><nav><button onclick="go(0)">Кандидат</button><button onclick="go(4)">HR</button><button onclick="go(6)">Ошибка регистрации</button></nav><section id="s0"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1200 760">
+<rect width="100%" height="auto" fill="#0b1220"/>
+<text x="64" y="65" fill="#4fd1c5" font-family="Arial" font-size="25">SkillGraph</text>
+<text x="64" y="155" fill="white" font-family="Arial" font-size="36">Регистрация кандидата</text>
+<rect x="64" y="215" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="259" fill="#e3edf7" font-family="Arial" font-size="23">Имя и фамилия</text>
+<rect x="64" y="310" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="354" fill="#e3edf7" font-family="Arial" font-size="23">Email</text>
+<rect x="64" y="405" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="449" fill="#e3edf7" font-family="Arial" font-size="23">Пароль от 8 символов</text>
+<g id="primary-button"><rect x="64" y="560" width="380" height="64" rx="8" fill="#4fd1c5"/>
+<text x="88" y="601" fill="#0b1220" font-family="Arial" font-size="23">Создать аккаунт</text></g>
+<text x="64" y="710" fill="#aabbd0" font-family="Arial" font-size="18">Учебный макет интерфейса · отдельный артефакт дизайна</text>
+</svg><button onclick="go(1)">Создать аккаунт</button></section><section id="s1" hidden><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1200 760">
+<rect width="100%" height="auto" fill="#0b1220"/>
+<text x="64" y="65" fill="#4fd1c5" font-family="Arial" font-size="25">SkillGraph</text>
+<text x="64" y="155" fill="white" font-family="Arial" font-size="36">Доступные вакансии</text>
+<rect x="64" y="215" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="259" fill="#e3edf7" font-family="Arial" font-size="23">Python Developer · Middle</text>
+<rect x="64" y="310" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="354" fill="#e3edf7" font-family="Arial" font-size="23">FastAPI, PostgreSQL, тестирование</text>
+<rect x="64" y="405" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="449" fill="#e3edf7" font-family="Arial" font-size="23">Удаленная работа · команда платформы</text>
+<g id="primary-button"><rect x="64" y="560" width="380" height="64" rx="8" fill="#4fd1c5"/>
+<text x="88" y="601" fill="#0b1220" font-family="Arial" font-size="23">Начать интервью</text></g>
+<text x="64" y="710" fill="#aabbd0" font-family="Arial" font-size="18">Учебный макет интерфейса · отдельный артефакт дизайна</text>
+</svg><button onclick="go(2)">Начать интервью</button></section><section id="s2" hidden><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1200 760">
+<rect width="100%" height="auto" fill="#0b1220"/>
+<text x="64" y="65" fill="#4fd1c5" font-family="Arial" font-size="25">SkillGraph</text>
+<text x="64" y="155" fill="white" font-family="Arial" font-size="36">Текстовое интервью</text>
+<rect x="64" y="215" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="259" fill="#e3edf7" font-family="Arial" font-size="23">Вопрос 1 из 6</text>
+<rect x="64" y="310" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="354" fill="#e3edf7" font-family="Arial" font-size="23">Как вы обеспечиваете надежность REST API?</text>
+<rect x="64" y="405" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="449" fill="#e3edf7" font-family="Arial" font-size="23">Ваш ответ: валидация, идемпотентность, тесты</text>
+<g id="primary-button"><rect x="64" y="560" width="380" height="64" rx="8" fill="#4fd1c5"/>
+<text x="88" y="601" fill="#0b1220" font-family="Arial" font-size="23">Отправить ответ</text></g>
+<text x="64" y="710" fill="#aabbd0" font-family="Arial" font-size="18">Учебный макет интерфейса · отдельный артефакт дизайна</text>
+</svg><button onclick="go(3)">Отправить ответ</button></section><section id="s3" hidden><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1200 760">
+<rect width="100%" height="auto" fill="#0b1220"/>
+<text x="64" y="65" fill="#4fd1c5" font-family="Arial" font-size="25">SkillGraph</text>
+<text x="64" y="155" fill="white" font-family="Arial" font-size="36">Интервью завершено</text>
+<rect x="64" y="215" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="259" fill="#e3edf7" font-family="Arial" font-size="23">Ответы сохранены</text>
+<rect x="64" y="310" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="354" fill="#e3edf7" font-family="Arial" font-size="23">Отчет готовится</text>
+<rect x="64" y="405" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="449" fill="#e3edf7" font-family="Arial" font-size="23">Решение принимает команда найма</text>
+<g id="primary-button"><rect x="64" y="560" width="380" height="64" rx="8" fill="#4fd1c5"/>
+<text x="88" y="601" fill="#0b1220" font-family="Arial" font-size="23">К вакансиям</text></g>
+<text x="64" y="710" fill="#aabbd0" font-family="Arial" font-size="18">Учебный макет интерфейса · отдельный артефакт дизайна</text>
+</svg><button onclick="go(1)">К вакансиям</button></section><section id="s4" hidden><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1200 760">
+<rect width="100%" height="auto" fill="#0b1220"/>
+<text x="64" y="65" fill="#4fd1c5" font-family="Arial" font-size="25">SkillGraph</text>
+<text x="64" y="155" fill="white" font-family="Arial" font-size="36">Кандидаты на вакансию</text>
+<rect x="64" y="215" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="259" fill="#e3edf7" font-family="Arial" font-size="23">Python Developer</text>
+<rect x="64" y="310" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="354" fill="#e3edf7" font-family="Arial" font-size="23">Дмитрий · интервью завершено</text>
+<rect x="64" y="405" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="449" fill="#e3edf7" font-family="Arial" font-size="23">Отчет: неполный анализ</text>
+<g id="primary-button"><rect x="64" y="560" width="380" height="64" rx="8" fill="#4fd1c5"/>
+<text x="88" y="601" fill="#0b1220" font-family="Arial" font-size="23">Открыть отчет</text></g>
+<text x="64" y="710" fill="#aabbd0" font-family="Arial" font-size="18">Учебный макет интерфейса · отдельный артефакт дизайна</text>
+</svg><button onclick="go(5)">Открыть отчет</button></section><section id="s5" hidden><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1200 760">
+<rect width="100%" height="auto" fill="#0b1220"/>
+<text x="64" y="65" fill="#4fd1c5" font-family="Arial" font-size="25">SkillGraph</text>
+<text x="64" y="155" fill="white" font-family="Arial" font-size="36">Результаты интервью</text>
+<rect x="64" y="215" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="259" fill="#e3edf7" font-family="Arial" font-size="23">Технические ответы сохранены</text>
+<rect x="64" y="310" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="354" fill="#e3edf7" font-family="Arial" font-size="23">AI недоступен: требуется ручная оценка</text>
+<rect x="64" y="405" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="449" fill="#e3edf7" font-family="Arial" font-size="23">Автоматическое решение о найме не принято</text>
+<g id="primary-button"><rect x="64" y="560" width="380" height="64" rx="8" fill="#4fd1c5"/>
+<text x="88" y="601" fill="#0b1220" font-family="Arial" font-size="23">Назад к кандидатам</text></g>
+<text x="64" y="710" fill="#aabbd0" font-family="Arial" font-size="18">Учебный макет интерфейса · отдельный артефакт дизайна</text>
+</svg><button onclick="go(4)">К кандидатам</button></section><section id="s6" hidden><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1200 760">
+<rect width="100%" height="auto" fill="#0b1220"/>
+<text x="64" y="65" fill="#4fd1c5" font-family="Arial" font-size="25">SkillGraph</text>
+<text x="64" y="155" fill="white" font-family="Arial" font-size="36">Проверьте данные</text>
+<rect x="64" y="215" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="259" fill="#e3edf7" font-family="Arial" font-size="23">Email: candidate@</text>
+<rect x="64" y="310" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="354" fill="#e3edf7" font-family="Arial" font-size="23">Неверный формат email</text>
+<rect x="64" y="405" width="1072" height="72" rx="8" fill="#172236" stroke="#34445e"/>
+<text x="88" y="449" fill="#e3edf7" font-family="Arial" font-size="23">Введите корректный адрес</text>
+<g id="primary-button"><rect x="64" y="560" width="380" height="64" rx="8" fill="#4fd1c5"/>
+<text x="88" y="601" fill="#0b1220" font-family="Arial" font-size="23">Исправить данные</text></g>
+<text x="64" y="710" fill="#aabbd0" font-family="Arial" font-size="18">Учебный макет интерфейса · отдельный артефакт дизайна</text>
+</svg><button onclick="go(0)">Исправить данные</button></section><p><a href="https://www.figma.com/design/SNUmhiX86AfktE1qgefnQZ">Редактируемый Figma</a> · <a href="https://www.figma.com/board/9cUmVfGwmZ6FOYY7svUV8u">Scrum-симуляция</a> · <a href="https://www.figma.com/slides/YS6JElWsBMJ84B9B7zKLhN">Презентация</a></p><p>Используйте кнопки под экраном для переходов. Эта публикация демонстрирует макет и процесс деплоя, полноценный серверный MVP запускается отдельно.</p></main><script>function go(n){document.querySelectorAll('section').forEach((s,i)=>s.hidden=i!==n);window.scrollTo(0,0)}</script></html>
